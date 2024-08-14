@@ -6,7 +6,7 @@
   top: 3%;
   padding: 10px;
   box-sizing: border-box;
-  mix-blend-mode: difference;
+  mix-blend-mode: multiply;
   z-index: 1;
 
   .burger {
@@ -29,14 +29,14 @@
       opacity: 1;
       transform: translateY(0);
       visibility: visible;
-      mix-blend-mode: difference; /* Ensure the blending effect */
+      mix-blend-mode: multiply; /* Ensure the blending effect */
     }
 
     .close {
       opacity: 0;
       transform: translateY(-20px);
       visibility: hidden;
-      mix-blend-mode: difference; /* Ensure the blending effect */
+      mix-blend-mode: multiply; /* Ensure the blending effect */
     }
 
     &.active .menu {
