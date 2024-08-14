@@ -18,7 +18,7 @@
         .nav {
             display: flex;
             flex-direction: column;
-            font-size: 56px;
+            font-size: inherit;
             gap: 12px;
             width: 25vw;
             margin-top: 80px;
@@ -27,7 +27,7 @@
                 color: rgb(153, 153, 153);
                 border-bottom: 1px solid rgb(153, 153, 153);
                 text-transform: uppercase;
-                font-size: 11px;
+                font-size: inherit;
                 margin-bottom: 40px;
             }
 
@@ -59,7 +59,7 @@
                 width: 80%;
                     border-bottom: 1px solid rgb(153, 153, 153);
                     text-transform: uppercase;
-                    font-size: 11px;
+                    font-size: inherit;
                     margin-bottom: 40px;
                 }
             }
