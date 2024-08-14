@@ -6,16 +6,13 @@
   top: 3%;
   padding: 10px;
   box-sizing: border-box;
-  mix-blend-mode: difference;
   z-index: 1;
-
   .burger {
     position: relative;
     display: flex;
     align-items: center;
     padding: 30px;
     pointer-events: none;
-    color: #fff;
 
     .text {
       position: absolute;
@@ -28,17 +25,27 @@
     .menu {
       opacity: 1;
       transform: translateY(0);
-      visibility: visible;
-      mix-blend-mode: difference; /* Ensure the blending effect */
-    }
+  visibility: visible;
+}
+.menu:hover {
+  opacity: 1;
+  transform: translateY(0);
+visibility: visible;
+color: #fff;
+}
 
     .close {
       opacity: 0;
       transform: translateY(-20px);
-      visibility: hidden;
-      mix-blend-mode: difference; /* Ensure the blending effect */
+  visibility: hidden;
     }
+    .close:hover {
+      opacity: 0;
+      transform: translateY(-20px);
+  visibility: hidden;
+color: #fff;
 
+    }
     &.active .menu {
       opacity: 0;
       transform: translateY(20px);
