@@ -1,0 +1,69 @@
+.header {
+  position: fixed;
+  display: flex;
+  width: fit-content;
+  right: 2%;
+  top: 3%;
+  padding: 10px;
+  box-sizing: border-box;
+  mix-blend-mode: difference;
+  z-index: 1;
+
+  .burger {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    pointer-events: none;
+    color: #fff;
+
+    .text {
+      position: absolute;
+      right: 10px;
+      font-weight: 300;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      pointer-events: none; /* Ensure clicks pass through */
+    }
+
+    .menu {
+      opacity: 1;
+      transform: translateY(0);
+      visibility: visible;
+      mix-blend-mode: difference; /* Ensure the blending effect */
+    }
+
+    .close {
+      opacity: 0;
+      transform: translateY(-20px);
+      visibility: hidden;
+      mix-blend-mode: difference; /* Ensure the blending effect */
+    }
+
+    &.active .menu {
+      opacity: 0;
+      transform: translateY(20px);
+      visibility: hidden;
+    }
+
+    &.active .close {
+      opacity: 1;
+      transform: translateY(0);
+
+      visibility: visible;
+    }
+  }
+
+  .bounds {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: all;
+
+    &:hover {
+      transform: scale(8);
+      color: #fff;
+    }
+  }
+}

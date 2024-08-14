@@ -1,0 +1,39 @@
+.header {
+    position: fixed;
+    display: flex;
+    width: 0%;
+    justify-content: flex-end;
+    padding: 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: black;
+    z-index: 1;
+  
+    .burger {
+      position: relative;
+      display: flex;
+      gap: 8px;
+      flex-direction: column;
+      padding: 30px;
+      pointer-events: none;
+      color: black;
+  
+      &::after {
+      
+      }
+    }
+  
+    .bounds {
+      position: absolute;
+      left: 0;
+      top: 0;
+   
+      pointer-events: all;
+      
+      &:hover {
+        transform: scale(3);
+        color: transparent;
+      }
+    }
+  }
+  
