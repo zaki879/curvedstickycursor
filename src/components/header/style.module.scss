@@ -7,7 +7,8 @@
   padding: 10px;
   box-sizing: border-box;
   z-index: 1;
-  transition: color 0.8s ease;
+  color: #000;
+  transition: color 0.3s linear;
 
   .burger {
     position: relative;
@@ -20,46 +21,62 @@
       position: absolute;
       right: 10px;
       font-weight: 300;
-      transition: opacity 0.3s ease, transform 0.3s ease;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
       pointer-events: none; /* Ensure clicks pass through */
     }
 
     .menu {
       opacity: 1;
       transform: translateY(0);
-  visibility: visible;
-}
-.menu:hover {
-  opacity: 1;
-  transform: translateY(0);
-visibility: visible;
-color: #fff;
-}
-
+      visibility: visible;
+      transition-delay: 0.4s; /* No delay for menu */
+    }
+    
     .close {
       opacity: 0;
       transform: translateY(-20px);
-  visibility: hidden;
-  color: #fff;
+      visibility: hidden;
+      transition-delay: 0.4s; /* Delay for close */
     }
+    
+    .menu:hover {
+      opacity: 1;
+      transform: translateY(0);
+      visibility: visible;
+      transition-delay: 0.4s; /* Delay for close */
+
+      color: #fff;
+    }
+
     .close:hover {
       opacity: 0;
       transform: translateY(-20px);
-  visibility: hidden;
-color: #fff;
+      visibility: hidden;
+      transition-delay: 0.4s; /* Delay for close */
 
+      color: #fff;
     }
+
     &.active .menu {
       opacity: 0;
       transform: translateY(20px);
       visibility: hidden;
+      transition-delay: 0.3s; /* No delay for close when active */
+      color: #fff;
+
     }
 
     &.active .close {
       opacity: 1;
       transform: translateY(0);
-
       visibility: visible;
+      transition-delay: 0.3s; /* No delay for close when active */
+      color: #fff;
+
     }
   }
 
@@ -77,8 +94,9 @@ color: #fff;
     }
   }
 }
-.header:hover{
-  color: #fff;
-  transition: color 0.8s ease;
 
+.header:hover {
+  color: #fff;
+  transition: color 0.3s ease;
+  
 }
