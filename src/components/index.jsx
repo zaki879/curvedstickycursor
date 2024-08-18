@@ -24,7 +24,7 @@ export default function Home() {
             onClick={() => {
               setIsActive(!isActive);
             }}
-            className="button"
+          
           >
             <div
               className={`${styles.burger} ${
