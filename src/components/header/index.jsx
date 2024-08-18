@@ -23,23 +23,14 @@ const Header = forwardRef(function index({ isActive }, ref) {
 
   return (
     <div
-      style={{
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "center",
-        alignItems: "center",
-        position:"absolute",
-        top:"2vh",
-        right:"3vw",
-        width:"fit-content"
-      }}
+    className="containerheader"
     >
     
-      <span style={{ position: "relative", top: "1px", zIndex: "0" ,fontFamily:"inherit",fontSize:"25px"}}>
+      <span className="menutext">
         Menu
       </span>
 
-      <div className="header" style={{  zIndex: "99" }}>
+      <div className="containericon" >
         <Magnetic>
           <div
             className={`burger ${isActive ? "active" : ""}`}

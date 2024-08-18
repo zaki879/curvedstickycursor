@@ -321,3 +321,20 @@ span:nth-child(18) {
     filter: blur(0);
   }
 }
+.containerheader{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  top:2vh;
+  right:3vw;
+  width:fit-content;
+  background-color:transparent
+}
+.menutext{
+  position: relative; top: 1px; z-index: 0 ;font-family:inherit;font-size:25px
+}
+.containericon{
+  position: relative; top: 1px;  z-index: 99 ;width:100%
+}
