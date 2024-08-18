@@ -5,7 +5,7 @@
     right: 0;
     top: 0;
     color: white;
-
+    z-index: 5;
     .body {
         box-sizing: border-box;
         height: 100%;
@@ -18,16 +18,16 @@
         .nav {
             display: flex;
             flex-direction: column;
-            font-size: inherit;
+            font-size: 56px;
             gap: 12px;
             width: 25vw;
             margin-top: 80px;
 
             .header {
-                color: rgb(153, 153, 153);
+                color: rgb(255, 255, 255);
                 border-bottom: 1px solid rgb(153, 153, 153);
                 text-transform: uppercase;
-                font-size: inherit;
+                font-size: 11px;
                 margin-bottom: 40px;
             }
 
@@ -59,7 +59,7 @@
                 width: 80%;
                     border-bottom: 1px solid rgb(153, 153, 153);
                     text-transform: uppercase;
-                    font-size: inherit;
+                    font-size: 11px;
                     margin-bottom: 40px;
                 }
             }

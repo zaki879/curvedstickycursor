@@ -1,12 +1,12 @@
 'use client';
-import   React, { useEffect, useState, useRef, useCallback } from 'react';
+import { useEffect, useState, useRef, useCallback } from 'react';
 import { motion, useMotionValue, useSpring, transform, animate } from 'framer-motion';
 import styles from './style.module.scss';
 
 export default function StickyCursor({ stickyElement }) {
   const [isHovered, setIsHovered] = useState(false);
   const cursor = useRef(null);
-  const cursorSize = isHovered ? 60 : 15;
+  const cursorSize = isHovered ? 55 : 10;
 
   const mouse = {
     x: useMotionValue(0),
@@ -18,7 +18,7 @@ export default function StickyCursor({ stickyElement }) {
     y: useMotionValue(1)
   };
 
-  const smoothOptions = { damping: 20, stiffness: 300, mass: 0.5 };
+  const smoothOptions = { damping: 20, stiffness: 250, mass: 0.5 };
   const smoothMouse = {
     x: useSpring(mouse.x, smoothOptions),
     y: useSpring(mouse.y, smoothOptions)

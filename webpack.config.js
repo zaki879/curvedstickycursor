@@ -22,6 +22,10 @@ module.exports = {
         test: /\.scss$/, // Match .scss files for styles
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
+      {
+        test: /\.css$/, // Match .css files
+        use: ['style-loader', 'css-loader'], // Use style-loader and css-loader
+      },
     ],
   },
   resolve: {
