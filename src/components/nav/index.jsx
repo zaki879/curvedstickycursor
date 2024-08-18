@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './style.module.scss';
+import './style.css';
 import { motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 import { menuSlide } from '../anim';
@@ -18,10 +18,10 @@ export default function Index() {
   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
 
   return (
-    <motion.div variants={menuSlide} initial="initial" animate="enter" exit="exit" className={styles.menu}>
-      <div className={styles.body}>
-        <div onMouseLeave={() => { setSelectedIndicator(pathname); }} className={styles.nav}>
-          <div className={styles.header}>
+    <motion.div variants={menuSlide} initial="initial" animate="enter" exit="exit" className="menu">
+      <div className="container">
+        <div onMouseLeave={() => { setSelectedIndicator(pathname); }} className="nav">
+          <div className="header">
             <p>Navigation</p>
           </div>
           {navItems.map((data, index) => (

@@ -1,14 +1,13 @@
 "use client";
-import { forwardRef } from "react";
-import styles from "./style.module.scss";
-import { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
+import "./style.css";
 import Header from '../header';
 import StickyCursor from '../stickyCursor';
-import HeaderSecond from '../headersecond';
+import Headersecond from '../headersecond';
 import Nav from '../nav';
-
 import { AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
+
 
 export default function SideBar() {
     const [isActive, setIsActive] = useState(false);
@@ -40,14 +39,14 @@ export default function SideBar() {
         };
       }, []);
   return  (
-    <main className={styles.main}>
-      <div className={styles.header}>
+    <main className="main">
+      <div className="header">
         <div
           ref={buttonRef}
           onClick={() => {
             setIsActive((prev) => !prev);
           }}
-          className={styles.button}
+          className="button"
         >
           <Header ref={stickyElement} isActive={isActive} />
           <Headersecond ref={stickyElement1} />

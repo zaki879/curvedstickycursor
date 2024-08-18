@@ -1,7 +1,7 @@
 'use client';
-import { useEffect, useState, useRef, useCallback } from 'react';
+import React ,{ useEffect, useState, useRef, useCallback } from 'react';
 import { motion, useMotionValue, useSpring, transform, animate } from 'framer-motion';
-import styles from './style.module.scss';
+import '../stickyCursor/style.css';
 
 export default function StickyCursor({ stickyElement }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -80,7 +80,7 @@ export default function StickyCursor({ stickyElement }) {
   const template = ({ rotate, scaleX, scaleY }) => `rotate(${rotate}) scaleX(${scaleX}) scaleY(${scaleY})`;
 
   return (
-    <div className={styles.cursorContainer}>
+    <div >
       <motion.div
         transformTemplate={template}
         style={{
@@ -93,7 +93,7 @@ export default function StickyCursor({ stickyElement }) {
           width: cursorSize,
           height: cursorSize
         }}
-        className={styles.cursor}
+        className="cursor"
         ref={cursor}
       />
     </div>

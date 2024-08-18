@@ -1,5 +1,4 @@
 import React, { forwardRef, useEffect, useState } from "react";
-import styles from "./style.module.scss";
 import Magnetic from "../magnetic";
 import { Toggle_Menu } from "../../../utils/pen";
 import "./style.css";
@@ -36,7 +35,7 @@ const Header = forwardRef(function index({ isActive }, ref) {
       }}
     >
     
-      <span style={{ position: "relative", top: "1px", zIndex: "0" }}>
+      <span style={{ position: "relative", top: "1px", zIndex: "0" ,fontFamily:"inherit",fontSize:"25px"}}>
         Menu
       </span>
 

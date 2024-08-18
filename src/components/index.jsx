@@ -1,6 +1,7 @@
 'use client';
 import styles from './style.module.scss';
-import { useEffect, useState } from 'react';
+import './style.css';
+import React ,{ useEffect, useState } from 'react';
 import Nav from './nav';
 import { AnimatePresence } from 'framer-motion';
 import { usePathname } from 'next/navigation';
@@ -17,13 +18,13 @@ export default function Home() {
 
   return (
     <>
-      <div className={styles.main}>
-        <div className={styles.header}>
+      <div className="main">
+        <div className="header">
           <div
             onClick={() => {
               setIsActive(!isActive);
             }}
-            className={styles.button}
+            className="{styles.button}"
           >
             <div
               className={`${styles.burger} ${

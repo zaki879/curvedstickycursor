@@ -54,3 +54,52 @@ button::after, button span {
   padding: 0.8em 1.2em;
   min-width: 80px;
 }
+.link {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.link .indicator {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: -30px;
+}
+.pseudo-text-effect {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  transition: transform 0.5s;
+  display: block;
+}
+.pseudo-text-effect::after {
+  content: attr(data-after);
+  display: inline-block;
+  transform: translateY(100%);
+  position: absolute;
+  left: 0;
+  transition: inherit;
+}
+.pseudo-text-effect > span {
+  display: inline-block;
+  transform: translateY(0%);
+  transition: inherit;
+}
+.pseudo-text-effect:hover > span {
+  transform: translateY(-100%);
+}
+.pseudo-text-effect:hover::after {
+  transform: translateY(0%);
+}
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper > * {
+  margin-right: 2rem;
+}

@@ -1,8 +1,9 @@
-import styles from './style.module.scss';
+import React from 'react'
 import './style.css';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { slide, scale } from '../../anim';
+
 
 export default function Index({ data, isActive, setSelectedIndicator }) {
   const { title, href, index, id } = data;
@@ -10,7 +11,7 @@ export default function Index({ data, isActive, setSelectedIndicator }) {
   return (
     <motion.div
       id={id} // Add id here
-      className={styles.link}
+      className="link"
       onMouseEnter={() => { setSelectedIndicator(href); }}
       custom={index}
       variants={slide}
@@ -21,7 +22,7 @@ export default function Index({ data, isActive, setSelectedIndicator }) {
       <motion.div
         variants={scale}
         animate={isActive ? "open" : "closed"}
-        className={styles.indicator}
+        className="indicator"
       ></motion.div>
       <Link href={href} className="pseudo-text-effect"  data-after={title}>
     <span>{title}</span>
