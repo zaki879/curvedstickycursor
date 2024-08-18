@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import { forwardRef } from 'react';
 import styles from './style.module.scss';
 import Magnetic from '../magnetic';
 

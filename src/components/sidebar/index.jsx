@@ -1,12 +1,13 @@
-import React, { useRef, useEffect, useState } from "react";
+"use client";
+import { forwardRef } from "react";
 import styles from "./style.module.scss";
-import Header from '../header';
-import StickyCursor from '../stickyCursor';
-import Headersecond from '../headersecond';
-import Nav from '../nav';
+import { useRef, useEffect, useState } from "react";
+import Header from "../components/header";
+import StickyCursor from "../components/stickyCursor";
+import Headersecond from "../components/headersecond";
+import Nav from "../components/nav";
 import { AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
-
 
 export default function SideBar() {
     const [isActive, setIsActive] = useState(false);
