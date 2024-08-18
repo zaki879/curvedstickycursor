@@ -2,10 +2,11 @@
 import { forwardRef } from "react";
 import styles from "./style.module.scss";
 import { useRef, useEffect, useState } from "react";
-import Header from "../components/header";
-import StickyCursor from "../components/stickyCursor";
-import Headersecond from "../components/headersecond";
-import Nav from "../components/nav";
+import Header from '../header';
+import StickyCursor from '../stickyCursor';
+import HeaderSecond from '../headersecond';
+import Nav from '../nav';
+
 import { AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 
