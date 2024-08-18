@@ -43,17 +43,7 @@ a {
   margin-right: 2rem;
 }
 
-button {
-  font-size: 1rem;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 999px;
-}
-button::after, button span {
-  padding: 0.8em 1.2em;
-  min-width: 80px;
-}
+
 .link {
   position: relative;
   display: flex;
