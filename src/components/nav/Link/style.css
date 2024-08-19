@@ -8,7 +8,7 @@
 /* wrapperoutcontainer for centering content */
 .wrapperoutcontainer {
   width: 100%;
-  height: 100vh;
+  height: 6rem;
   display: flex;
   align-items: start;
   justify-content: start;
