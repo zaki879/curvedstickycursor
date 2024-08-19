@@ -34,7 +34,7 @@
 .menuoutcontainer .bodyoutcontainer .navoutcontainer a {
     text-decoration: none;
     color: #F7F5FF;
-    font-weight: 300;
+    font-weight: 500;
 }
 @media (max-width: 768px) {
     .menuoutcontainer {
@@ -70,6 +70,6 @@
     .menuoutcontainer .bodyoutcontainer .navoutcontainer a {
         text-decoration: none;
         color: white;
-        font-weight: 300;
+        font-weight: 400;
    }
 }
