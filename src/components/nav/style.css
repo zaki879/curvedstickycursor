@@ -1,5 +1,5 @@
-/* General styles for the menu */
-.menu {
+/* General styles for the menuoutcontainer */
+.menuoutcontainer {
     height: 100vh;
     background-color: #4c00ff;
     position: fixed;
@@ -11,8 +11,8 @@
     overflow-y: auto; /* Ensure content is scrollable if it overflows */
   }
   
-  /* Styling for the body inside the menu */
-  .menu .body {
+  /* Styling for the bodyoutcontainer inside the menuoutcontainer */
+  .menuoutcontainer .bodyoutcontainer {
     box-sizing: border-box;
     height: 100%;
     width: 100%;
@@ -23,18 +23,17 @@
   }
   
   /* Navigation styling */
-  .menu .body .nav {
+  .menuoutcontainer .bodyoutcontainer .navoutcontainer {
     display: flex;
     flex-direction: column;
     font-size: 2.5rem; /* Responsive font size */
     gap: 12px;
     margin-top: 80px;
-    width: 100%;
-
+    
   }
   
-  /* Header styling */
-  .menu .body .nav .header {
+  /* headeroutcontainer styling */
+  .menuoutcontainer .bodyoutcontainer .navoutcontainer .headeroutcontainer {
     width: 100%;
     color: #fff;
     border-bottom: 1px solid #999;
@@ -44,7 +43,7 @@
   }
   
   /* Link styling */
-  .menu .body .nav a {
+  .menuoutcontainer .bodyoutcontainer .navoutcontainer a {
     text-decoration: none;
     color: white;
     font-weight: 300;
@@ -53,19 +52,19 @@
   
   /* Responsive adjustments */
   @media (max-width: 768px) {
-    .menu {
+    .menuoutcontainer {
       width: 100vw; /* Full width on smaller screens */
     }
   
-    .menu .body {
+    .menuoutcontainer .bodyoutcontainer {
       padding: 50px; /* Reduce padding for smaller screens */
     }
   
-    .menu .body .nav {
+    .menuoutcontainer .bodyoutcontainer .navoutcontainer {
       font-size: 1.75rem; /* Adjust font size for smaller screens */
     }
   
-    .menu .body .nav .header {
+    .menuoutcontainer .bodyoutcontainer .navoutcontainer .headeroutcontainer {
       margin-bottom: 20px; /* Adjust margin */
     }
   }

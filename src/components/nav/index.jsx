@@ -18,10 +18,10 @@ export default function Index() {
   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
 
   return (
-    <motion.div variants={menuSlide} initial="initial" animate="enter" exit="exit" className="menu">
-      <div className="body">
-        <div onMouseLeave={() => { setSelectedIndicator(pathname); }} className="nav">
-          <div className="header">
+    <motion.div variants={menuSlide} initial="initial" animate="enter" exit="exit" className="menuoutcontainer">
+      <div className="bodyoutcontainer">
+        <div onMouseLeave={() => { setSelectedIndicator(pathname); }} className="navoutcontainer">
+          <div className="headeroutcontainer">
             <p>Navigation</p>
           </div>
           {navItems.map((data, index) => (
