@@ -45,8 +45,10 @@
   overflow: hidden;
   display: block;
   transition: transform 0.5s;
-  font-size: 2rem; /* Responsive font size */
+  font-size: 2rem; /* Adjusted font size */
   white-space: nowrap; /* Prevent text wrapping */
+  line-height: 1; /* Ensures no extra space is added around the text */
+  height: 1em; /* Matches the height to the font size */
 }
 
 .pseudo-text-effect::after {
@@ -56,12 +58,14 @@
   position: absolute;
   left: 0;
   transition: transform 0.5s;
+  line-height: 1;
 }
 
 .pseudo-text-effect > span {
   display: inline-block;
   transform: translateY(0%);
   transition: transform 0.5s;
+  line-height: 1;
 }
 
 .pseudo-text-effect:hover > span {
@@ -71,6 +75,7 @@
 .pseudo-text-effect:hover::after {
   transform: translateY(0%);
 }
+
 
 /* Adjust font size and spacing for smaller screens */
 @media (max-width: 768px) {
