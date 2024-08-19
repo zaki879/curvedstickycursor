@@ -41,7 +41,12 @@ const Header = forwardRef(function index({ isActive }, ref) {
     >
     
     
-      {!isActive && showMenu ? <span className="menutext"> Menu</span>: <span > </span>}
+    {!isActive && showMenu ? (
+  <span key={isActive} className="menutext"> Menu</span>
+) : (
+  <span></span>
+)}
+
    
 
       <div className="containericon" >
