@@ -40,9 +40,9 @@ const Header = forwardRef(function index({ isActive }, ref) {
     className="containerheader"
     >
     
-    <span className="menutext">
-      {!isActive && showMenu ? "Menu" : ""}
-    </span>
+    
+      {!isActive && showMenu ? <span className="menutext"> Menu</span>: <span > </span>}
+   
 
       <div className="containericon" >
         <Magnetic>
