@@ -20,15 +20,29 @@ const Header = forwardRef(function index({ isActive }, ref) {
   const handleClick = () => {
     Toggle_Menu();
   };
+  const [showMenu, setShowMenu] = useState(false);
+
+  useEffect(() => {
+    if (!isActive) {
+      const timer = setTimeout(() => {
+        setShowMenu(true);
+      }, 1000); // Show the menu after 4 seconds
+
+      // Clear the timeout if `isActive` becomes true before 4 seconds
+      return () => clearTimeout(timer);
+    } else {
+      setShowMenu(false);
+    }
+  }, [isActive]);
 
   return (
     <div
     className="containerheader"
     >
     
-      <span className="menutext">
-        Menu
-      </span>
+    <span className="menutext">
+      {!isActive && showMenu ? "Menu" : ""}
+    </span>
 
       <div className="containericon" >
         <Magnetic>
