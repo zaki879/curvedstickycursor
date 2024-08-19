@@ -47,6 +47,7 @@ a {
 .link {
   position: relative;
   display: flex;
+  height: fit-content;
   align-items: center;
 }
 .link .indicator {
