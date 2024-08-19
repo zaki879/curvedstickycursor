@@ -7,10 +7,10 @@ import Link from './Link';
 import Curve from './Curve';
 
 const navItems = [
-  { title: "Home", href: "/", id: "home" },
-  { title: "Projects", href: "/projects", id: "projects" },
-  { title: "About", href: "/about", id: "about" },
-  { title: "Contact", href: "/contact", id: "contact" },
+  { title: "HOME", href: "/", id: "home" },
+  { title: "PROJECTS", href: "/projects", id: "projects" },
+  { title: "ABOUT", href: "/about", id: "about" },
+  { title: "CONTACT", href: "/contact", id: "contact" },
 ];
 
 export default function Index() {

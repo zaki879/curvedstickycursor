@@ -46,7 +46,7 @@
   display: block;
   font-weight: 600;
   transition: transform 0.5s;
-  font-size: 4rem; /* Adjusted font size */
+  font-size: 3.3rem; /* Adjusted font size */
   white-space: nowrap; /* Prevent text wrapping */
   line-height: 1; /* Ensures no extra space is added around the text */
   height: 1em; /* Matches the height to the font size */
