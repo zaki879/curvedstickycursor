@@ -15,7 +15,7 @@
     position: fixed;
     right: 0;
     top: 0;
-    color: white;
+    color: #2D264C;
     z-index: 1; /* Set above the overlay */
   }
   
@@ -40,7 +40,7 @@
     margin-top: 80px;
 }
 .menuoutcontainer .bodyoutcontainer .navoutcontainer .headeroutcontainer {
-    color: #fff;
+    color: #2D264C;
     border-bottom: 1px solid #999;
     text-transform: uppercase;
     font-size: 1rem;
@@ -48,7 +48,7 @@
 }
 .menuoutcontainer .bodyoutcontainer .navoutcontainer a {
     text-decoration: none;
-    color: #F7F5FF;
+    color: #2D264C;
     font-weight: 500;
 }
 @media (max-width: 768px) {
@@ -59,7 +59,7 @@
         right: 0;
         top: 0;
         width: 100vw;
-        color: white;
+        color: #2D264C;
         z-index: 5;
    }
     .menuoutcontainer .bodyoutcontainer {
@@ -77,14 +77,14 @@
         width: 100vw;
    }
     .menuoutcontainer .bodyoutcontainer .navoutcontainer .headeroutcontainer {
-        color: #fff;
+        color: #2D264C;
         border-bottom: 1px solid #999;
         text-transform: uppercase;
         font-size: 1rem;
    }
     .menuoutcontainer .bodyoutcontainer .navoutcontainer a {
         text-decoration: none;
-        color: white;
+        color: #2D264C;
         font-weight: 400;
    }
 }

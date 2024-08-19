@@ -36,7 +36,7 @@ const Header = forwardRef(function index({ isActive }, ref) {
         {showOverlay && (
           <motion.div
             className="overlay"
-            style={{ backgroundColor: "rgba(76, 0, 0, 0.5)" }} // Inline style to change background color
+            style={{ backgroundColor: "rgba(0, 0, 0, 0.1)" }} // Inline style to change background color
             initial={{ x: "100%" }} 
             animate={{ x: 0 }} 
             exit={{ x: "100%" }} 
