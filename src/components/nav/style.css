@@ -1,4 +1,5 @@
-.menuoutcode {
+/* General styles for the menu */
+.menu {
     height: 100vh;
     background-color: #4c00ff;
     position: fixed;
@@ -6,76 +7,63 @@
     top: 0;
     color: white;
     z-index: 5;
-}
-.menuoutcode .containeroutcode {
+    width: 25vw; /* Default width for larger screens */
+    overflow-y: auto; /* Ensure content is scrollable if it overflows */
+  }
+  
+  /* Styling for the body inside the menu */
+  .menu .body {
     box-sizing: border-box;
     height: 100%;
-    width: 25vw;
+    width: 100%;
     padding: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-.menuoutcode .containeroutcode .navoutcode {
+  }
+  
+  /* Navigation styling */
+  .menu .body .nav {
     display: flex;
     flex-direction: column;
-    font-size: 56px;
- 
+    font-size: 2.5rem; /* Responsive font size */
     gap: 12px;
-    height: 100vh;
-    width: 25vw;
     margin-top: 80px;
-}
-.menuoutcode .containeroutcode .navoutcode .header {
+  }
+  
+  /* Header styling */
+  .menu .body .nav .header {
     color: #fff;
     border-bottom: 1px solid #999;
     text-transform: uppercase;
-    font-size: 20px;
-	width: 100%;
+    font-size: 11px;
     margin-bottom: 40px;
-	font-family: inherit;
-}
-.menuoutcode .containeroutcode .navoutcode .link {
+  }
+  
+  /* Link styling */
+  .menu .body .nav a {
     text-decoration: none;
     color: white;
     font-weight: 300;
-}
-@media (max-width: 768px) {
-    .menuoutcode {
-        height: 100vh;
-        background-color: #4c00ff;
-        position: fixed;
-        right: 0;
-        top: 0;
-        width: 100vw;
-        color: white;
-        z-index: 5;
-   }
-    .menuoutcode .containeroutcode {
-        box-sizing: border-box;
-        height: 100%;
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-   }
-    .menuoutcode .containeroutcode .navoutcode {
-        display: flex;
-        flex-direction: column;
-        font-size: 56px;
-        width: 100vw;
-   }
-    .menuoutcode .containeroutcode .navoutcode .header {
-        color: #fff;
-	width: 100%;
-        font-family: inherit;
-        border-bottom: 1px solid #999;
-        text-transform: uppercase;
-        font-size:20px;
-   }
-    .menuoutcode .containeroutcode .navoutcode a {
-        text-decoration: none;
-        color: white;
-        font-weight: 300;
-   }
-}
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .menu {
+      width: 100vw; /* Full width on smaller screens */
+    }
+  
+    .menu .body {
+      padding: 50px; /* Reduce padding for smaller screens */
+    }
+  
+    .menu .body .nav {
+      font-size: 1.75rem; /* Adjust font size for smaller screens */
+    }
+  
+    .menu .body .nav .header {
+      margin-bottom: 20px; /* Adjust margin */
+    }
+  }
+  

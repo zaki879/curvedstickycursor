@@ -10,7 +10,7 @@ const navItems = [
   { title: "Home", href: "/", id: "home" },
   { title: "Projects", href: "/projects", id: "projects" },
   { title: "About", href: "/about", id: "about" },
-  { title: "Contact", href: "/contact", id: "contact" }, // Fixed duplicate id
+  { title: "Contact", href: "/contact", id: "contact" },
 ];
 
 export default function Index() {
@@ -18,10 +18,10 @@ export default function Index() {
   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
 
   return (
-    <motion.div variants={menuSlide} initial="initial" animate="enter" exit="exit" className="menuoutcode">
-      <div className="containeroutcode">
-        <div onMouseLeave={() => { setSelectedIndicator(pathname); }} className="navoutcode">
-          <div className="headeroutcode">
+    <motion.div variants={menuSlide} initial="initial" animate="enter" exit="exit" className="menu">
+      <div className="body">
+        <div onMouseLeave={() => { setSelectedIndicator(pathname); }} className="nav">
+          <div className="header">
             <p>Navigation</p>
           </div>
           {navItems.map((data, index) => (
