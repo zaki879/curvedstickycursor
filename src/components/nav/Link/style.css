@@ -17,7 +17,7 @@
 
 /* Spacing between elements */
 .wrapper > * {
-  margin: 1rem; /* Adjusted for better responsiveness */
+  margin: 1rem; /* Spacing between child elements */
 }
 
 /* linkoutcontainer container */
@@ -25,7 +25,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  margin: 1rem 0;
+  margin: 1rem 0; /* Margin for vertical spacing */
 }
 
 /* Indicator dot */
@@ -45,7 +45,7 @@
   overflow: hidden;
   display: block;
   transition: transform 0.5s;
-  font-size: 2.5rem; /* Make font size responsive */
+  font-size: 2rem; /* Responsive font size */
   white-space: nowrap; /* Prevent text wrapping */
 }
 
@@ -75,10 +75,14 @@
 /* Adjust font size and spacing for smaller screens */
 @media (max-width: 768px) {
   .pseudo-text-effect {
-    font-size: 0.9rem;
+    font-size: 1rem; /* Adjusted for smaller screens */
   }
 
   .linkoutcontainer .indicator {
     left: -20px; /* Adjust the position of the indicator for smaller screens */
+  }
+
+  .wrapper > * {
+    margin: 0.5rem; /* Reduce spacing for smaller screens */
   }
 }
