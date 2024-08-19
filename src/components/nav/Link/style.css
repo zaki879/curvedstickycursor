@@ -59,6 +59,7 @@ a {
   left: -30px;
 }
 .pseudo-text-effect {
+  height: 100%; 
   position: relative;
   padding: 0;
   overflow: hidden;
@@ -66,6 +67,7 @@ a {
   display: block;
 }
 .pseudo-text-effect::after {
+  height: 100%;
   content: attr(data-after);
   display: inline-block;
   transform: translateY(100%);
@@ -75,6 +77,7 @@ a {
 }
 .pseudo-text-effect > span {
   display: inline-block;
+  height: 100%;
   transform: translateY(0%);
   transition: inherit;
 }
