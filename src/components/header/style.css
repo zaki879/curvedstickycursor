@@ -321,7 +321,6 @@ span:nth-child(18) {
     filter: blur(0);
   }
 }
-
 .containerheader{
   display: flex;
   flex-direction: row;
@@ -334,11 +333,8 @@ span:nth-child(18) {
   background-color:transparent
 }
 .menutext{
-  position: relative; top: 1px; z-index: 0 !important;font-family:inherit;font-size:25px;
-  
+  position: relative; top: 1px; z-index: 0 !important;font-family:inherit;font-size:25px
 }
 .containericon{
   position: relative; top: 1px;  z-index: 99 !important ;width:100%
 }
-
-
