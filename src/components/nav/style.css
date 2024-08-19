@@ -1,25 +1,13 @@
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.1); /* Semi-transparent black */
-    z-index: 0; /* Set behind the menuoutcontainer */
-    pointer-events: all; /* Ensure the overlay can receive clicks */
-  }
-  
-  .menuoutcontainer {
+.menuoutcontainer {
     height: 100vh;
-    background-color: #E7E1FE;
+    background-color: #332A5B;
     position: fixed;
     right: 0;
     top: 0;
-    color: #2D264C;
-    z-index: 1; /* Set above the overlay */
-  }
-  
-  .menuoutcontainer .bodyoutcontainer {
+    color: white;
+    z-index: 0;
+}
+.menuoutcontainer .bodyoutcontainer {
     box-sizing: border-box;
     height: 100%;
     width: 25vw;
@@ -27,10 +15,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-  
-  
-  
+}
+
 .menuoutcontainer .bodyoutcontainer .navoutcontainer {
     display: flex;
     flex-direction: column;
@@ -40,7 +26,7 @@
     margin-top: 80px;
 }
 .menuoutcontainer .bodyoutcontainer .navoutcontainer .headeroutcontainer {
-    color: #2D264C;
+    color: #fff;
     border-bottom: 1px solid #999;
     text-transform: uppercase;
     font-size: 1rem;
@@ -48,18 +34,18 @@
 }
 .menuoutcontainer .bodyoutcontainer .navoutcontainer a {
     text-decoration: none;
-    color: #2D264C;
+    color: #F7F5FF;
     font-weight: 500;
 }
 @media (max-width: 768px) {
     .menuoutcontainer {
         height: 100vh;
-        background-color: #fff;
+        background-color: #4c00ff;
         position: fixed;
         right: 0;
         top: 0;
         width: 100vw;
-        color: #2D264C;
+        color: white;
         z-index: 5;
    }
     .menuoutcontainer .bodyoutcontainer {
@@ -77,14 +63,14 @@
         width: 100vw;
    }
     .menuoutcontainer .bodyoutcontainer .navoutcontainer .headeroutcontainer {
-        color: #2D264C;
+        color: #fff;
         border-bottom: 1px solid #999;
         text-transform: uppercase;
         font-size: 1rem;
    }
     .menuoutcontainer .bodyoutcontainer .navoutcontainer a {
         text-decoration: none;
-        color: #2D264C;
+        color: white;
         font-weight: 400;
    }
 }
