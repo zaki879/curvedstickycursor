@@ -221,7 +221,17 @@
     background-color: #fff; /* Change to white */
     transition: color 0.3s ease;
 }
+.burger:hover .btnoutcontainer::before
+ {
+    background-color: #2D264C; /* Change to white */
+    transition: color 0.3s ease;
+}
 
+.burger:hover .btnoutcontainer::after
+ {
+    background-color: #2D264C; /* Change to white */
+    transition: color 0.3s ease;
+}
 
 
 h1 {
