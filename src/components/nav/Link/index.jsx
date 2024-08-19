@@ -8,7 +8,9 @@ export default function Index({ data, isActive, setSelectedIndicator }) {
   const { title, href, index, id } = data;
 
   return (
-    <motion.div
+  <motion.div className='wrapperoutcontainer'>
+
+<motion.div
       id={id}
       className="linkoutcontainer"
       onMouseEnter={() => { setSelectedIndicator(href); }}
@@ -27,5 +29,7 @@ export default function Index({ data, isActive, setSelectedIndicator }) {
         <span>{title}</span>
       </Link>
     </motion.div>
+  </motion.div>
+    
   );
 }

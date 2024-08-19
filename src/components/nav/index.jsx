@@ -26,6 +26,7 @@ export default function Index() {
           </div>
           {navItems.map((data, index) => (
             <Link
+             className="linkof"
               key={index}
               data={{ ...data }}
               isActive={selectedIndicator === data.href}
