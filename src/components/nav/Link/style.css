@@ -45,7 +45,7 @@
   overflow: hidden;
   display: block;
   transition: transform 0.5s;
-  font-size: 1rem; /* Make font size responsive */
+  font-size: 2.5rem; /* Make font size responsive */
   white-space: nowrap; /* Prevent text wrapping */
 }
 

@@ -10,5 +10,5 @@ export function _tgl(elementId, className) {
 }
 
 export function Toggle_Menu() {
-    _tgl('Button_Nav', 'btn-x');
+    _tgl('Button_Nav', 'btn-xoutcontainer');
 }

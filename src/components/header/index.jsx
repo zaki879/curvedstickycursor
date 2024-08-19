@@ -37,7 +37,7 @@ const Header = forwardRef(function index({ isActive }, ref) {
             onClick={handleClick}
           >
             <div ref={ref} className="bounds" onClick={handleClick}></div>
-            <div className="btn-o" id="Button_Nav"></div>{" "}
+            <div className="btn-ooutcontainer" id="Button_Nav"></div>{" "}
             {/* Moved outside the burger */}
           </div>
         </Magnetic>

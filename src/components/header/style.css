@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 
-.btn-o {
+.btn-ooutcontainer {
     width: 30px;
     height: 25px;
     animation: hide-show 0.3s ease;
@@ -21,7 +21,7 @@
     }
 }
 
-.btn-o::before, .btn-o::after {
+.btn-ooutcontainer::before, .btn-ooutcontainer::after {
     background: #000;
     height: 2px;
     display: block;
@@ -30,7 +30,7 @@
     content: "";
 }
 
-.btn-o::before {
+.btn-ooutcontainer::before {
     animation: obf 0.8s ease both;
 }
 
@@ -58,7 +58,7 @@
     }
 }
 
-.btn-o::after {
+.btn-ooutcontainer::after {
     animation: oaf 0.8s ease both;
 }
 
@@ -92,11 +92,11 @@
     }
 }
 
-.btn-x::before, .btn-x::after {
+.btn-xoutcontainer::before, .btn-xoutcontainer::after {
     background-color: #fff;
 }
 
-.btn-x::before {
+.btn-xoutcontainer::before {
     animation: xbf 0.8s ease both;
 }
 
@@ -125,7 +125,7 @@
     }
 }
 
-.btn-x::after {
+.btn-xoutcontainer::after {
     animation: xaf 0.8s ease both;
 }
 
@@ -210,13 +210,13 @@
         
     }
 }
-.burger:hover .btn-o::before
+.burger:hover .btn-ooutcontainer::before
  {
     background-color: #fff; /* Change to white */
     transition: color 0.3s ease;
 }
 
-.burger:hover .btn-o::after
+.burger:hover .btn-ooutcontainer::after
  {
     background-color: #fff; /* Change to white */
     transition: color 0.3s ease;
