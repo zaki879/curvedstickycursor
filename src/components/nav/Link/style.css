@@ -36,7 +36,7 @@ a {
 .link {
   position: relative;
   display: flex;
-  height:80px;
+  height:10%;
   align-items: center;
 }
 .link .indicator {
@@ -48,7 +48,7 @@ a {
   left: -30px;
 }
 .pseudo-text-effect {
-  height: fit-content; 
+  height: 100%; 
   position: relative;
   padding: 0;
   
@@ -57,7 +57,7 @@ a {
   display: block;
 }
 .pseudo-text-effect::after {
-  height: fit-content;
+  height: 100%;
   content: attr(data-after);
   display: inline-block;
   transform: translateY(100%);
@@ -67,7 +67,7 @@ a {
 }
 .pseudo-text-effect > span {
   display: inline-block;
-  height: fit-content;
+  height: 100%;
   transform: translateY(0%);
   transition: inherit;
 }
