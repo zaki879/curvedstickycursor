@@ -4,6 +4,7 @@ export function _tgl(elementId, className) {
     if (element) {
         console.log(`Toggling class on element with ID: ${elementId}`);
         element.classList.toggle(className);
+        console.log(`Current classes on element: ${element.className}`);
     } else {
         console.log(`Element with ID ${elementId} not found.`);
     }
