@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-import styles from './styles.module.scss';
+import  './style.css';
 
 export default function Index() {
 
@@ -22,7 +22,7 @@ export default function Index() {
   }
 
   return (
-    <svg className={styles.svgCurve}>
+    <svg className="svgCurve">
         <motion.path variants={curve} initial="initial" animate="enter" exit="exit"></motion.path>
     </svg>
   )
