@@ -1,44 +1,34 @@
-.pseudo-text-effect {
-  position: relative;
+/* Resetting margin and padding */
+* {
+  margin: 0;
   padding: 0;
-  overflow: hidden;
-  transition: transform 0.5s;
-  display: block;
-}
-.pseudo-text-effect::after {
-  content: attr(data-after);
-  display: inline-block;
-  transform: translateY(100%);
-  position: absolute;
-  left: 0;
-  transition: inherit;
-}
-.pseudo-text-effect > span {
-  display: inline-block;
-  transform: translateY(0%);
-  transition: inherit;
-}
-.pseudo-text-effect:hover > span {
-  transform: translateY(-100%);
-}
-.pseudo-text-effect:hover::after {
-  transform: translateY(0%);
+  box-sizing: border-box;
 }
 
-
-
-a {
-  color: inherit;
+/* Wrapper for centering content */
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow wrapping for small screens */
 }
 
+/* Spacing between elements */
+.wrapper > * {
+  margin: 1rem; /* Adjusted for better responsiveness */
+}
 
-
+/* Link container */
 .link {
   position: relative;
   display: flex;
-  height:10%;
   align-items: center;
+  margin: 1rem 0;
 }
+
+/* Indicator dot */
 .link .indicator {
   width: 10px;
   height: 10px;
@@ -47,43 +37,48 @@ a {
   position: absolute;
   left: -30px;
 }
+
+/* Pseudo text effect */
 .pseudo-text-effect {
-  height: 100%; 
   position: relative;
   padding: 0;
-  
   overflow: hidden;
-  transition: transform 0.5s;
   display: block;
+  transition: transform 0.5s;
+  font-size: 1rem; /* Make font size responsive */
+  white-space: nowrap; /* Prevent text wrapping */
 }
+
 .pseudo-text-effect::after {
-  height: 100%;
   content: attr(data-after);
   display: inline-block;
   transform: translateY(100%);
   position: absolute;
   left: 0;
-  transition: inherit;
+  transition: transform 0.5s;
 }
+
 .pseudo-text-effect > span {
   display: inline-block;
-  height: 100%;
   transform: translateY(0%);
-  transition: inherit;
+  transition: transform 0.5s;
 }
+
 .pseudo-text-effect:hover > span {
   transform: translateY(-100%);
 }
+
 .pseudo-text-effect:hover::after {
   transform: translateY(0%);
 }
-.wrapper {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.wrapper > * {
-  margin-right: 2rem;
+
+/* Adjust font size and spacing for smaller screens */
+@media (max-width: 768px) {
+  .pseudo-text-effect {
+    font-size: 0.9rem;
+  }
+
+  .link .indicator {
+    left: -20px; /* Adjust the position of the indicator for smaller screens */
+  }
 }

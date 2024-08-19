@@ -1,16 +1,15 @@
-import React from 'react'
+import React from 'react';
 import './style.css';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { slide, scale } from '../../anim';
-
 
 export default function Index({ data, isActive, setSelectedIndicator }) {
   const { title, href, index, id } = data;
 
   return (
     <motion.div
-      id={id} // Add id here
+      id={id}
       className="link"
       onMouseEnter={() => { setSelectedIndicator(href); }}
       custom={index}
@@ -24,9 +23,9 @@ export default function Index({ data, isActive, setSelectedIndicator }) {
         animate={isActive ? "open" : "closed"}
         className="indicator"
       ></motion.div>
-      <Link href={href} className="pseudo-text-effect"  data-after={title}>
-    <span>{title}</span>
- </Link>
+      <Link href={href} className="pseudo-text-effect" data-after={title}>
+        <span>{title}</span>
+      </Link>
     </motion.div>
   );
 }
