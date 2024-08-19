@@ -5,7 +5,7 @@
     right: 0;
     top: 0;
     color: white;
-    z-index: 5;
+    z-index: 0;
 }
 .menuoutcontainer .bodyoutcontainer {
     box-sizing: border-box;
@@ -33,7 +33,7 @@
 }
 .menuoutcontainer .bodyoutcontainer .navoutcontainer a {
     text-decoration: none;
-    color: white;
+    color: #F7F5FF;
     font-weight: 300;
 }
 @media (max-width: 768px) {

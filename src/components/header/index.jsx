@@ -27,7 +27,7 @@ const Header = forwardRef(function index({ isActive }, ref) {
     >
     
       <span className="menutext">
-        Menu
+      {!isActive ? "Menu" : ""}
       </span>
 
       <div className="containericon" >
