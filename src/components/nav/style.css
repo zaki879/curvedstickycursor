@@ -47,7 +47,7 @@
   .menuoutcontainer .bodyoutcontainer .navoutcontainer a {
     text-decoration: none;
     color: white;
-    font-weight: 300;
+    font-weight: 600;
     transition: color 0.3s ease; /* Smooth color transition */
   }
   
