@@ -46,7 +46,7 @@ export default function SideBar() {
           onClick={() => {
             setIsActive((prev) => !prev);
           }}
-          className="button"
+         
         >
           <Header ref={stickyElement} isActive={isActive} />
           <Headersecond ref={stickyElement1} />
