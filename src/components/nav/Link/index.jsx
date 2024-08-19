@@ -10,7 +10,7 @@ export default function Index({ data, isActive, setSelectedIndicator }) {
   return (
     <motion.div
       id={id}
-      className="link"
+      className="linkoutcontainer"
       onMouseEnter={() => { setSelectedIndicator(href); }}
       custom={index}
       variants={slide}
