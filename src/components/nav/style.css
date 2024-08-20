@@ -16,7 +16,18 @@
     flex-direction: column;
     justify-content: space-between;
 }
+@media (max-width: 1100px) {
 
+    .menuoutcontainer .bodyoutcontainer {
+        box-sizing: border-box;
+        height: 100%;
+        width: 30vw;
+        padding: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
 .menuoutcontainer .bodyoutcontainer .navoutcontainer {
     display: flex;
     flex-direction: column;
