@@ -237,7 +237,7 @@ h1 {
 }
 
 .fadetext {
-  display: inline-block;
+  display: inherit;
   opacity: 0;
   filter: blur(4px);
 }
