@@ -26,7 +26,7 @@ export default function Index({ data, isActive, setSelectedIndicator }) {
         className="indicator"
       ></motion.div>
       <Link href={href} className="pseudo-text-effect" data-after={title}>
-        <span>{title}</span>
+        <span className='linktextanim'>{title}</span>
       </Link>
     </motion.div>
   </motion.div>
