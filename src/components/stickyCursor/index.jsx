@@ -88,7 +88,7 @@ export default function StickyCursor({ stickyElement, isHoverd }) {
           top: smoothMouse.y,
           scaleX: scale.x,
           scaleY: scale.y,
-          backgroundColor: (isHoverd || !isHovered) ? 'white' : '#560aff',
+          backgroundColor: (isHoverd && isHovered) ? 'white' : '#560aff',
         }}
         animate={{
           width: cursorSize,
