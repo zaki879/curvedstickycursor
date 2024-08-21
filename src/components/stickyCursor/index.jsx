@@ -1,12 +1,16 @@
-'use client';
-import React ,{ useEffect, useState, useRef, useCallback } from 'react';
+import React, { useEffect, useState, useRef, useCallback } from 'react';
 import { motion, useMotionValue, useSpring, transform, animate } from 'framer-motion';
 import '../header/style.css';
 
 export default function StickyCursor({ stickyElement, isHoverd }) {
   const [isHovered, setIsHovered] = useState(false);
   const cursor = useRef(null);
+
+  // Define cursor size based on hover state
   const cursorSize = isHovered ? 55 : 10;
+
+  // Define background color based on hover state
+  const cursorColor = isHovered || isHoverd ? 'white' : '#560aff';
 
   const mouse = {
     x: useMotionValue(0),
@@ -80,7 +84,7 @@ export default function StickyCursor({ stickyElement, isHoverd }) {
   const template = ({ rotate, scaleX, scaleY }) => `rotate(${rotate}) scaleX(${scaleX}) scaleY(${scaleY})`;
 
   return (
-    <div >
+    <div>
       <motion.div
         transformTemplate={template}
         style={{
@@ -88,14 +92,14 @@ export default function StickyCursor({ stickyElement, isHoverd }) {
           top: smoothMouse.y,
           scaleX: scale.x,
           scaleY: scale.y,
-          backgroundColor:( (isHoverd && isHovered ) || isHoverd) ? 'white' : '#560aff',
+          backgroundColor: cursorColor, // Use the variable for background color
         }}
         animate={{
           width: cursorSize,
           height: cursorSize
         }}
         className="cursor"
-                ref={cursor}
+        ref={cursor}
       />
     </div>
   );
