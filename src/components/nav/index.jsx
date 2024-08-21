@@ -15,7 +15,7 @@ import {
   faPinterest,
   faSkype,
   faYoutube,
-  faBehance,
+  faTiktok ,
   faDribbble,
 } from "@fortawesome/free-brands-svg-icons";
 const navItems = [
@@ -71,7 +71,14 @@ export default function Index() {
                         {" "}
                         <FontAwesomeIcon
                           className="hovericon"
-                          icon={faFacebook}
+                          icon={faInstagram}
+                        />
+                      </a>
+                      <a class="slider-nav-item">
+                        {" "}
+                        <FontAwesomeIcon
+                          className="hovericon"
+                          icon={faTiktok}
                         />
                       </a>
                       <a class="slider-nav-item">
@@ -79,13 +86,6 @@ export default function Index() {
                         <FontAwesomeIcon
                           className="hovericon"
                           icon={faYoutube}
-                        />
-                      </a>
-                      <a class="slider-nav-item">
-                        {" "}
-                        <FontAwesomeIcon
-                          className="hovericon"
-                          icon={faInstagram}
                         />
                       </a>
                       <a class="slider-nav-item">
