@@ -25,7 +25,7 @@ const navItems = [
   { title: "CONTACT", href: "/contact", id: "contact" },
 ];
 
-export default function Index() {
+export default function Nav() {
   const pathname = usePathname();
   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
 

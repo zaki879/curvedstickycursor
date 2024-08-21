@@ -180,7 +180,22 @@
     cursor: pointer;
    
 }
+.cursor{
+  position: fixed;
+  width: 5px;
+  height: 5px;
+  background-color: #560aff;
+  border-radius: 50%;
+  pointer-events: none;
+  
+}
 
+@media (max-width: 768px) {
+  .cursor{
+      opacity: 0;
+      
+  }
+}
  .bounds {
     position: absolute;
     left: 0;

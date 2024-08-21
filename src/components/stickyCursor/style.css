@@ -14,3 +14,19 @@
         
     }
 }
+.cursorhover{
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    pointer-events: none;
+    
+}
+
+@media (max-width: 768px) {
+    .cursorhover{
+        opacity: 0;
+        
+    }
+}

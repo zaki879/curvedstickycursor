@@ -1,9 +1,9 @@
 'use client';
 import React ,{ useEffect, useState, useRef, useCallback } from 'react';
 import { motion, useMotionValue, useSpring, transform, animate } from 'framer-motion';
-import '../stickyCursor/style.css';
+import '../header/style.css';
 
-export default function StickyCursor({ stickyElement }) {
+export default function StickyCursor({ stickyElement,isHoverd }) {
   const [isHovered, setIsHovered] = useState(false);
   const cursor = useRef(null);
   const cursorSize = isHovered ? 55 : 10;
@@ -93,7 +93,7 @@ export default function StickyCursor({ stickyElement }) {
           width: cursorSize,
           height: cursorSize
         }}
-        className="cursor"
+        className={`${isHoverd ? 'cursorhover' : 'cursor'}`}
         ref={cursor}
       />
     </div>

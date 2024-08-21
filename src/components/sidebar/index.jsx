@@ -11,6 +11,7 @@ import { usePathname } from "next/navigation";
 
 export default function SideBar() {
     const [isActive, setIsActive] = useState(false);
+    const [isHoverd, setIsHoverd] = useState(false);
     const pathname = usePathname();
     const stickyElement = useRef(null);
     const stickyElement1 = useRef(null);
@@ -38,6 +39,9 @@ export default function SideBar() {
           document.removeEventListener("mousedown", handleClickOutside);
         };
       }, []);
+      // Event handlers to update isHoverd
+    const handleMouseEnter = () => setIsHoverd(true);
+    const handleMouseLeave = () => setIsHoverd(false);
   return  (
     <main className="main">
       <div className="header">
@@ -50,14 +54,16 @@ export default function SideBar() {
         >
           <Header ref={stickyElement} isActive={isActive} />
           <Headersecond ref={stickyElement1} />
-          <StickyCursor stickyElement={stickyElement} />
-          <StickyCursor stickyElement={stickyElement1} />
+          <StickyCursor stickyElement={stickyElement} isHoverd={isHoverd}/>
+          <StickyCursor stickyElement={stickyElement1} isHoverd={isHoverd}/>
         </div>
       </div>
 
       <AnimatePresence mode="wait">
         {isActive && (
-          <div ref={navRef}>
+          <div    ref={navRef}
+                        onMouseEnter={handleMouseEnter}
+                        onMouseLeave={handleMouseLeave}>
             <Nav />
           </div>
         )}
