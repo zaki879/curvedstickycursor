@@ -3,7 +3,7 @@ import React ,{ useEffect, useState, useRef, useCallback } from 'react';
 import { motion, useMotionValue, useSpring, transform, animate } from 'framer-motion';
 import '../header/style.css';
 
-export default function StickyCursor({ stickyElement,isHoverd }) {
+export default function StickyCursor({ stickyElement, isHoverd }) {
   const [isHovered, setIsHovered] = useState(false);
   const cursor = useRef(null);
   const cursorSize = isHovered ? 55 : 10;
@@ -87,14 +87,15 @@ export default function StickyCursor({ stickyElement,isHoverd }) {
           left: smoothMouse.x,
           top: smoothMouse.y,
           scaleX: scale.x,
-          scaleY: scale.y
+          scaleY: scale.y,
+          backgroundColor: isHoverd ? 'white' : '#560aff',
         }}
         animate={{
           width: cursorSize,
           height: cursorSize
         }}
-        className={`${isHoverd ? 'cursorhover' : 'cursor'}`}
-        ref={cursor}
+        className="cursor"
+                ref={cursor}
       />
     </div>
   );
