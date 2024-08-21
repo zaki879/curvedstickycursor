@@ -221,17 +221,26 @@
         
     }
 }
-.burger:hover .btnoutcontainero::before
- {
-    background-color: #fff; /* Change to white */
-    transition: color 0.3s ease;
+.burger:hover .btnoutcontainero::before,
+.burger:hover .btnoutcontainero::after {
+  background-color: #fff; /* Default color */
+  transition: background-color 0.3s ease;
+}
+.burger-active {
+  position: relative;
+  align-items: center;
+  padding: 30px;
+  pointer-events: none;
+  cursor: pointer;
+ 
+}
+/* Active state styles */
+.burger-active:hover .btnoutcontainero::before,
+.burger-active:hover .btnoutcontainero::after {
+  background-color: #000; /* Change to black */
+  transition: background-color 0.3s ease;
 }
 
-.burger:hover .btnoutcontainero::after
- {
-    background-color: #fff; /* Change to white */
-    transition: color 0.3s ease;
-}
 
 
 
