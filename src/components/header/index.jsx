@@ -3,8 +3,18 @@ import Magnetic from "../magnetic";
 import { Toggle_Menu } from "../../../utils/pen";
 import "./style.css";
 
-const Header = forwardRef(function index({ isActive }, ref) {
+const Header = forwardRef(function index({ isActive ,isHoverd,setIsHoverd }, ref) {
   const [initialized, setInitialized] = useState(false);
+  const handleMouseEnter = () => {
+    console.log("Mouse entered");
+    setIsHoverd(true); // Set isHoverd to true when mouse enters
+  };
+
+  // Handle mouse leave event
+  const handleMouseLeave = () => {
+    console.log("Mouse left");
+    setIsHoverd(false); // Set isHoverd to false when mouse leaves
+  };
 
   useEffect(() => {
     if (!initialized) {
@@ -49,7 +59,8 @@ const Header = forwardRef(function index({ isActive }, ref) {
 
    
 
-      <div className="containericon" >
+      <div className="containericon" onMouseEnter={handleMouseEnter}
+                        onMouseLeave={handleMouseLeave}>
         <Magnetic>
           <div
             className={`burger ${isActive ? "active" : ""}`}
