@@ -1,6 +1,6 @@
 .menuoutcontainer {
     height: 100vh;
-    background-color: #560AFF;
+    background-color: #140d23;
     position: fixed;
     right: 0;
     top: 0;
@@ -51,7 +51,7 @@
 @media (max-width: 768px) {
     .menuoutcontainer {
         height: 100vh;
-        background-color: #560AFF;
+        background-color: #140d23;
         position: fixed;
         right: 0;
         top: 0;
