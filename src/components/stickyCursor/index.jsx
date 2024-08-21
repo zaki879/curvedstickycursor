@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef, useCallback } from 'react';
 import { motion, useMotionValue, useSpring, transform, animate } from 'framer-motion';
 import '../header/style.css';
 
-export default function StickyCursor({ stickyElement, isHoverd }) {
+export default function StickyCursor({ stickyElement, isHoverd ,isActive }) {
   const [isHovered, setIsHovered] = useState(false);
   const cursor = useRef(null);
 
@@ -10,7 +10,7 @@ export default function StickyCursor({ stickyElement, isHoverd }) {
   const cursorSize = isHovered ? 55 : 10;
 
   // Define background color based on hover state
-  const cursorColor = isHoverd  ? 'white' : '#560aff';
+  const cursorColor = (isHoverd && isActive)  ? 'white' : '#560aff';
 
   const mouse = {
     x: useMotionValue(0),
