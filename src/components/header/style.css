@@ -237,7 +237,7 @@
 /* Active state styles */
 .burger-active:hover .btnoutcontainero::before,
 .burger-active:hover .btnoutcontainero::after {
-  background-color: #000; /* Change to black */
+  background-color: #34144d; /* Change to black */
   transition: background-color 0.3s ease;
 }
 
