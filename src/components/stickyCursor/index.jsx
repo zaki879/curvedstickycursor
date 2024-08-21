@@ -6,7 +6,7 @@ import '../header/style.css';
 export default function StickyCursor({ stickyElement, isHoverd }) {
   const [isHovered, setIsHovered] = useState(false);
   const cursor = useRef(null);
-  const cursorSize = isHovered ? 55 : 10;
+  const cursorSize = isHovered ? 55 : 5;
 
   const mouse = {
     x: useMotionValue(0),
