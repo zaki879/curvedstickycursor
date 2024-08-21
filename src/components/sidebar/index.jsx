@@ -54,8 +54,9 @@ export default function SideBar() {
         >
           <Header ref={stickyElement} isActive={isActive} />
           <Headersecond ref={stickyElement1} />
-          <StickyCursor stickyElement={stickyElement} isHoverd={isHoverd}/>
           <StickyCursor stickyElement={stickyElement1} isHoverd={isHoverd}/>
+
+          <StickyCursor stickyElement={stickyElement} isHoverd={isHoverd}/>
         </div>
       </div>
 

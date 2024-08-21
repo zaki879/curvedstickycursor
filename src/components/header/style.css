@@ -182,8 +182,6 @@
 }
 .cursor{
   position: fixed;
-  width: 5px;
-  height: 5px;
   border-radius: 50%;
   pointer-events: none;
 }
