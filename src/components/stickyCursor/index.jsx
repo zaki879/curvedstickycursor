@@ -10,7 +10,7 @@ export default function StickyCursor({ stickyElement, isHoverd }) {
   const cursorSize = isHovered ? 55 : 10;
 
   // Define background color based on hover state
-  const cursorColor = isHovered || isHoverd ? 'white' : '#560aff';
+  const cursorColor = isHoverd ? 'white' : '#560aff';
 
   const mouse = {
     x: useMotionValue(0),
