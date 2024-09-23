@@ -108,6 +108,7 @@
     padding: 30px;
     pointer-events: none;
     cursor: pointer;
+    z-index: 999999999999999999999999999999;
    
 }
 
